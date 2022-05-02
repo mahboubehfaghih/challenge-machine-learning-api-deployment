@@ -1,4 +1,4 @@
-API deployment
+# API deployment
 Repository: challenge-machine-learning-api-deployment
 Type of Challenge: Learning
 Duration: 6 days
@@ -11,7 +11,7 @@ Be able to create a Flask API that can handle a machine learning model.
 Deploy an API to Heroku.
 
 
-The Mission
+## Mission objectives
 The real estate company "ImmoEliza" is really happy about your data collection using web scrapping. Whenever a new property comes on the market, the question of how it should be priced naturally arises.
 
 Now, the company asks you to create a machine learning model to predict prices on Belgium's real estate sales. "ImmoEliza" has hired you to build a tool that enables the company to predict property prices using linear regression.
