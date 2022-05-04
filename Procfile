@@ -1,1 +1,1 @@
-web: gunicorn predict_house:app
+web: gunicorn app:app
