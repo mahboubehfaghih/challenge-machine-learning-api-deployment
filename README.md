@@ -26,10 +26,30 @@ In addition, they would like you to create an API to let their web-developers cr
 Ideally, your API would ask a user to provide with information about a property (features) and return the estimated price using your model.
 
 ## Preparation
-I am going to explain how to deploy trained linear regression machine learning model as a lightweight web application on Heroku.
+I am going to explain how to deploy trained linear regression machine learning model as a web application to Heroku.
 
 Since most of the advanced libraries in machine learning available in python, I am going to use python for developing web application as well to avoid any inter language dependencies.This project has three steps.
 
 #### Step 1: Train/Finalize/Save Your Machine Learning Model
 we want to build some House’s price prediction webapp which predicts your house price based on your car’s features like "Number of bedrooms", "Living area", "Number of facades", "Surface area land" and etc. For this app, I am selecting "data Folder" dataset to train my ML model.
+
 After model training, I saved the model in file name “house_price_prediction.pkl”. This is a trained model file ready to deploy on web application.
+
+I have created one folder called “mlmodel” . In this folder I have placed trained linear regression model called “house_price_prediction.pkl”. 
+
+#### Step 2: Create Application Web
+Now lets create web application that uses our trained model to predict new house selling price. I am using Flask frame work. Flask is a lightweight web framework for developing web applications. 
+
+You can use trained model by just loading from .pkl file.
+
+#### Step 3: Deploy Linear Regression Application
+Third and final part is about deployment. I am using Heroku for deploying our house’ price prediction app.
+
+Heroku needs only two basic files for deployment. 
+
+The first thing we need to do is define which libraries our application uses. To achieve this, we need to create a requirements.txt file.
+
+For Heroku to be able to run our application like it should, we need to define a set of processes/commands that it should run beforehand. These commands are located in the Procfile.
+
+Once the application is created on Heroku, we're ready to deploy it online.
+
