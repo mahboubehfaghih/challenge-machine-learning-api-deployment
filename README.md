@@ -38,7 +38,7 @@ After model training, I saved the model in file name “house_price_prediction.p
 I have created one folder called “mlmodel” . In this folder I have placed trained linear regression model called “house_price_prediction.pkl”. 
 
 #### Step 2: Create Application Web
-Now lets create web application that uses our trained model to predict new house selling price. I am using Flask frame work. Flask is a lightweight web framework for developing web applications. 
+I create web application that uses the trained model to predict new house selling price. I am using Flask frame work. Flask is a lightweight web framework for developing web applications. 
 
 You can use trained model by just loading from .pkl file.
 
@@ -47,9 +47,8 @@ Third and final part is about deployment. I am using Heroku for deploying our ho
 
 Heroku needs only two basic files for deployment. 
 
-The first thing we need to do is define which libraries our application uses. To achieve this, we need to create a requirements.txt file.
+The first thing I need to do is define which libraries my application uses. To achieve this, I need to create a requirements.txt file.
 
-For Heroku to be able to run our application like it should, we need to define a set of processes/commands that it should run beforehand. These commands are located in the Procfile.
+For Heroku to be able to run my application like it should, I need to define a set of processes/commands that it should run beforehand. These commands are located in the Procfile.
 
 Once the application is created on Heroku, we're ready to deploy it online.
-
