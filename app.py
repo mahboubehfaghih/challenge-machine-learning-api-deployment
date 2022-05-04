@@ -18,7 +18,7 @@ predicted_price = 0
 def main():
     if request.method == "POST":
 
-        model = pickle.load(open(r'C:\Users\Mahboubeh\Documents\GitHub\content\00.projects\4.deployment\New folder1\flaskapp\mlmodel\house_price_prediction.pkl', 'rb'))
+        model = pickle.load(open(r'mlmodel/house_price_prediction.pkl', 'rb'))
 
         Number_of_bedrooms = int(request.form.get("Number of bedrooms"))
         Living_area = int(request.form.get("Living area"))
