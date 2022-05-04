@@ -24,3 +24,11 @@ Take the dataset that was previously **scraped** and preprocess the data to be u
 In addition, they would like you to create an API to let their web-developers create a website around it.
 
 Ideally, your API would ask a user to provide with information about a property (features) and return the estimated price using your model.
+
+## Preparation
+I am going to explain how to deploy trained linear regression machine learning model as a lightweight web application on Heroku.
+
+Since most of the advanced libraries in machine learning available in python, I am going to use python for developing web application as well to avoid any inter language dependencies.This project has three steps.
+
+#### Step 1: rain/Finalize/Save Your Machine Learning Model
+we want to build some House’s price prediction webapp which predicts your house price based on your car’s features like "Number of bedrooms", "Living area", "Number of facades", "Surface area land" and etc. For this app, I am selecting this dataset to train my ML model.
