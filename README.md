@@ -31,7 +31,7 @@ I am going to explain how to deploy trained linear regression machine learning m
 Since most of the advanced libraries in machine learning available in python, I am going to use python for developing web application as well to avoid any inter language dependencies.This project has three steps.
 
 #### Step 1: Train/Finalize/Save Your Machine Learning Model
-we want to build some House’s price prediction webapp which predicts your house price based on your car’s features like "Number of bedrooms", "Living area", "Number of facades", "Surface area land" and etc. For this app, I am selecting "data Folder" dataset to train my ML model.
+we want to build some House’s price prediction webapp which predicts your house price based on your house’s features like "Number of bedrooms", "Living area", "Number of facades", "Surface area land" and etc. For this app, I am selecting "data Folder" dataset to train my ML model.
 
 After model training, I saved the model in file name “house_price_prediction.pkl”. This is a trained model file ready to deploy on web application.
 
