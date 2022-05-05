@@ -3,20 +3,107 @@
 
     <head>
     <title>Predict House Calculator</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      }
+      h1 {
+      margin: 0 0 20px;
+      font-weight: 400;
+      color: #1c87c9;
+      }
+      p {
+      margin: 0 0 5px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #1c87c9;
+      }
+      form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5; 
+      background: #f5f5f5; 
+      }
+      .fas {
+      margin: 25px 10px 0;
+      font-size: 72px;
+      color: #fff;
+      }
+      .fa-envelope {
+      transform: rotate(-20deg);
+      }
+      .fa-at , .fa-mail-bulk{
+      transform: rotate(10deg);
+      }
+      input, textarea {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+      }
+      input::placeholder {
+      color: #666;
+      }
+      button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9; 
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+      }
+      button:hover {
+      background: #2371a0;
+      }    
+      @media (min-width: 568px) {
+      .main-block {
+      flex-direction: row;
+      }
+      .left-part, form {
+      width: 50%;
+      }
+      .fa-envelope {
+      margin-top: 0;
+      margin-left: 20%;
+      }
+      .fa-at {
+      margin-top: -10%;
+      margin-left: 65%;
+      }
+      .fa-mail-bulk {
+      margin-top: 2%;
+      margin-left: 28%;
+      }
+      }
+    </style>
     </head>
 
     <body>
 
-        <h4> Predict House calculation</h4>                           <!-- creating a header -->
-        <form name="form" , method="POST">                     <!-- defining a form to serve as user-input interface. Post method request was used, as its unlimited and secure-->
-            <div >                                             <!--divison is created for each of the label so as to allow for easy styling by css-->
-            <label for="1">Number of bedrooms</label>                    <!--Number of bedrooms label was created within the form-->
+        <h4> House Price Prediction </h4>                          
+        <form name="form" , method="POST">                     
+            <div >                                             
+            <label for="1">Number of bedrooms</label>                    
                 <input                                           
                     name="Number of bedrooms"
                     type="number"
                     id="1"
                     placeholder=""
-                />                                              <!--This is used to specified what a user can enter data. It work with some attribute such as name, type etc-->
+                />                                              
             
             </div>
 
@@ -59,7 +146,7 @@
 
         </form>
  
-         <h3 >{{ '%0.0f'|format(predicted_price|float) }}  HousePricePrediction</h3> 
+         <h3 >{{ '%0.0f'|format(predicted_price|float) }}  Predicted House Price</h3> 
      
 
     </body>
